@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movitel - Conectando Moçambique</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container header-container">
+        <div class="logo">
+          <img src="assets/images/logo-movitel.png" alt="Movitel Logo" />
+          <h1>Movitel</h1>
+        </div>
+        <button class="mobile-menu-btn">☰</button>
+        <nav>
+          <ul>
+            <li><a href="#Pagamentos UnISCED">Pagamentos UnISCED</a></li>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#products">Produtos</a></li>
+            <li><a href="#about">Sobre Nós</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <h2>Conectando Moçambique</h2>
+        <p>
+          Oferecemos os melhores serviços de telecomunicações para particulares
+          e empresas em todo o país.
+        </p>
+        <a href="#services" class="btn">Conhecer Serviços</a>
+      </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-title">
+          <h2>Nossos Serviços</h2>
+          <p>Descubra a nossa gama completa de serviços de telecomunicações</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <img src="assets/images/internet-movel.jpg" alt="Internet Móvel" />
+            <div class="service-card-content">
+              <h3>Internet Móvel</h3>
+              <p>
+                Acesso rápido à internet em qualquer lugar com a nossa rede 4G.
+              </p>
+              <p class="price">A partir de 250 MT/mês</p>
+              <a href="#" class="btn">Saber Mais</a>
+            </div>
+          </div>
+          <div class="service-card">
+            <img src="assets/images/chamadas-voz.jpg" alt="Chamadas Voz" />
+            <div class="service-card-content">
+              <h3>Chamadas Voz</h3>
+              <p>
+                Faça chamadas com qualidade de som superior a preços
+                competitivos.
+              </p>
+              <p class="price">A partir de 1 MT/minuto</p>
+              <a href="#" class="btn">Saber Mais</a>
+            </div>
+          </div>
+          <div class="service-card">
+            <img src="assets/images/e-mola.jpg" alt="e-Mola" />
+            <div class="service-card-content">
+              <h3>e-Mola</h3>
+              <p>
+                Serviço de carteira digital para pagamentos e transferências
+                seguras.
+              </p>
+              <p class="price">Taxas competitivas</p>
+              <a href="#" class="btn">Saber Mais</a>
+            </div>
+          </div>
+          <div class="service-card">
+            <img src="assets/images/UnISCED.jpg" alt="UnISCED" />
+            <div class="service-card-content">
+              <h3>UnISCED</h3>
+              <p>
+                Serviço pagamentos e transferências
+                seguras para UnISCED.
+              </p>
+              <p class="price">Taxas com 3% de desconto</p>
+              <a href="#" class="btn">Saber Mais</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Produtos -->
+    <section class="products" id="products">
+      <div class="container">
+        <div class="section-title">
+          <h2>Nossos Produtos</h2>
+          <p>
+            Encontre os melhores dispositivos e pacotes para as suas
+            necessidades
+          </p>
+        </div>
+
+        <div class="products-controls">
+          <div class="search-box">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Pesquisar produtos..."
+            />
+            <i>🔍</i>
+          </div>
+          <div class="sort-options">
+            <select id="sort-by">
+              <option value="name">Ordenar por Nome</option>
+              <option value="price">Ordenar por Preço</option>
+              <option value="category">Ordenar por Categoria</option>
+            </select>
+            <select id="sort-order">
+              <option value="asc">Crescente</option>
+              <option value="desc">Decrescente</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="products-grid" id="products-grid">
+          <!-- Produtos serão carregados via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Minhas compras -->
+    <section class="cart-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Minhas compras</h2>
+          <p>Revise os itens que selecionou</p>
+        </div>
+        <div class="cart-container">
+          <div class="cart-items" id="cart-items">
+            <!-- Itens das Minhas compras serão carregados via JavaScript -->
+          </div>
+          <div class="cart-total" id="cart-total">Total: 0 MT</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>Movitel</h3>
+            <p>
+              Líder em telecomunicações em Moçambique, conectando pessoas e
+              negócios em todo o país.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h3>Serviços</h3>
+            <ul>
+              <li><a href="#">Internet Móvel</a></li>
+              <li><a href="#">Chamadas Voz</a></li>
+              <li><a href="#">e-Mola</a></li>
+              <li><a href="#">Pacotes Corporativos</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Suporte</h3>
+            <ul>
+              <li><a href="#">Centro de Ajuda</a></li>
+              <li><a href="#">Contacte-nos</a></li>
+              <li><a href="#">Lojas</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contactos</h3>
+            <ul>
+              <li>📞 +258 826682140</li>
+              <li>📧 info@movitel.co.mz</li>
+              <li>📍 Av. 25 de Setembro, Nampula</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Movitel. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
